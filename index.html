@@ -6,847 +6,1263 @@
 
 <title>Gowtham M S | Electrical & Electronics Engineering</title>
 
+<meta name="description"
+content="Portfolio of Gowtham M S - Electrical & Electronics Engineering">
+
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f8fafc;
-    color: #172033;
-    line-height: 1.6;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f9fc;
+    color:#172033;
+    line-height:1.6;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #0b1f3a;
-    padding: 18px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+a{
+    text-decoration:none;
 }
 
-.logo {
-    color: white;
-    font-size: 23px;
-    font-weight: bold;
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
 }
 
-.logo span {
-    color: #60a5fa;
+/* ================= NAVBAR ================= */
+
+nav{
+    background:#0b1f3a;
+    padding:18px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
 }
 
-nav ul li a:hover {
-    color: #60a5fa;
+.logo span{
+    color:#60a5fa;
 }
 
-.hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(120deg, #eff6ff, #ffffff);
-    padding: 70px 8%;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:22px;
 }
 
-.hero-content {
-    max-width: 750px;
+nav ul li a{
+    color:white;
+    font-size:14px;
+    font-weight:bold;
 }
 
-.small-title {
-    color: #2563eb;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 14px;
+nav ul li a:hover{
+    color:#60a5fa;
 }
 
-h1 {
-    font-size: 65px;
-    color: #0b1f3a;
-    margin: 12px 0;
+/* ================= HERO ================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(120deg,#eff6ff,#ffffff);
 }
 
-.hero h2 {
-    font-size: 25px;
-    color: #334155;
-    margin-bottom: 20px;
+.hero-content{
+    max-width:850px;
 }
 
-.hero p {
-    color: #64748b;
-    font-size: 17px;
-    max-width: 700px;
+.kicker{
+    color:#2563eb;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:12px;
 }
 
-.buttons {
-    margin-top: 30px;
+.hero h1{
+    font-size:64px;
+    line-height:1.1;
+    color:#0b1f3a;
+    margin-bottom:12px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 13px 22px;
-    margin-right: 10px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: bold;
+.hero h2{
+    font-size:24px;
+    color:#334155;
+    margin-bottom:20px;
 }
 
-.primary {
-    background: #2563eb;
-    color: white;
+.hero p{
+    color:#64748b;
+    font-size:17px;
+    max-width:780px;
 }
 
-.secondary {
-    border: 1px solid #2563eb;
-    color: #2563eb;
-    background: white;
+.buttons{
+    margin-top:28px;
 }
 
-section {
-    padding: 80px 8%;
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:7px;
+    font-weight:bold;
+    font-size:14px;
+    margin-right:10px;
+    margin-bottom:10px;
 }
 
-.section-title {
-    margin-bottom: 40px;
+.primary{
+    background:#2563eb;
+    color:white;
 }
 
-.section-title small {
-    color: #2563eb;
-    font-weight: bold;
-    letter-spacing: 2px;
+.secondary{
+    background:white;
+    color:#2563eb;
+    border:1px solid #2563eb;
 }
 
-.section-title h2 {
-    color: #0b1f3a;
-    font-size: 38px;
-    margin-top: 5px;
+/* ================= SECTION ================= */
+
+section{
+    padding:75px 0;
 }
 
-.section-title p {
-    color: #64748b;
+.section-title{
+    margin-bottom:35px;
 }
 
-.about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+.section-title small{
+    color:#2563eb;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 8px 25px rgba(15,23,42,0.05);
+.section-title h2{
+    font-size:38px;
+    color:#0b1f3a;
+    margin:5px 0;
 }
 
-.card h3 {
-    color: #0b1f3a;
-    margin-bottom: 15px;
+.section-title p{
+    color:#64748b;
 }
 
-.card p {
-    color: #64748b;
+/* ================= ABOUT ================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:25px;
 }
 
-.info {
-    list-style: none;
+.card{
+    background:white;
+    padding:30px;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    box-shadow:0 5px 20px rgba(15,23,42,.04);
 }
 
-.info li {
-    padding: 10px 0;
-    border-bottom: 1px solid #e5e7eb;
-    color: #475569;
+.card h3{
+    color:#0b1f3a;
+    margin-bottom:14px;
 }
 
-.info strong {
-    display: inline-block;
-    width: 120px;
-    color: #172033;
+.card p{
+    color:#64748b;
 }
 
-.projects {
-    background: white;
+.info{
+    list-style:none;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+.info li{
+    padding:10px 0;
+    border-bottom:1px solid #e2e8f0;
+    color:#64748b;
 }
 
-.project {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 30px;
-    transition: 0.3s;
+.info strong{
+    display:inline-block;
+    width:120px;
+    color:#172033;
 }
 
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+/* ================= EDUCATION ================= */
+
+.education{
+    background:white;
 }
 
-.project-number {
-    color: #2563eb;
-    font-size: 13px;
-    font-weight: bold;
+.timeline{
+    max-width:900px;
 }
 
-.project h3 {
-    color: #0b1f3a;
-    margin: 10px 0;
+.timeline-item{
+    border-left:3px solid #bfdbfe;
+    padding:0 0 30px 25px;
+    margin-left:5px;
+    position:relative;
 }
 
-.project p {
-    color: #64748b;
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-9px;
+    top:2px;
+    width:13px;
+    height:13px;
+    background:#2563eb;
+    border-radius:50%;
 }
 
-.tags {
-    margin-top: 18px;
+.timeline-item h3{
+    color:#0b1f3a;
+    font-size:20px;
 }
 
-.tag {
-    display: inline-block;
-    background: #dbeafe;
-    color: #1d4ed8;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 12px;
-    margin: 4px;
-    font-weight: bold;
+.timeline-item h4{
+    color:#334155;
+    margin:4px 0;
 }
 
-.skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+.date{
+    color:#2563eb;
+    font-size:13px;
+    font-weight:bold;
 }
 
-.skill {
-    background: white;
-    padding: 23px;
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
+.timeline-item p{
+    color:#64748b;
 }
 
-.skill h3 {
-    color: #0b1f3a;
-    margin-bottom: 8px;
+/* ================= EXPERIENCE ================= */
+
+.experience-card{
+    max-width:900px;
 }
 
-.skill p {
-    color: #64748b;
-    font-size: 14px;
+.company{
+    color:#2563eb;
+    font-weight:bold;
 }
 
-.location {
-    background: white;
+.role{
+    color:#0b1f3a;
+    font-size:22px;
+    font-weight:bold;
 }
 
-.location-box {
-    background: #0b1f3a;
-    color: white;
-    padding: 35px;
-    border-radius: 12px;
-    max-width: 800px;
+.experience-card ul{
+    padding-left:20px;
+    color:#64748b;
 }
 
-.location-box p {
-    color: #cbd5e1;
-    margin: 12px 0 25px;
+.experience-card li{
+    margin-bottom:10px;
 }
 
-.contact {
-    background: #0b1f3a;
-    color: white;
+/* ================= PROJECTS ================= */
+
+.projects{
+    background:white;
 }
 
-.contact h2 {
-    color: white;
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.project{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    padding:30px;
 }
 
-.contact-box {
-    border: 1px solid #334155;
-    padding: 22px;
-    border-radius: 10px;
+.project-number{
+    color:#2563eb;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
-.contact-box small {
-    color: #60a5fa;
-    font-weight: bold;
+.project h3{
+    color:#0b1f3a;
+    font-size:21px;
+    margin:10px 0 15px;
 }
 
-.contact-box p,
-.contact-box a {
-    color: white;
-    text-decoration: none;
-    margin-top: 5px;
+.project ul{
+    padding-left:20px;
+    color:#64748b;
 }
 
-footer {
-    background: #071426;
-    color: #94a3b8;
-    text-align: center;
-    padding: 25px;
+.project li{
+    margin-bottom:10px;
 }
 
-footer strong {
-    color: white;
+.tags{
+    margin-top:18px;
 }
 
-@media(max-width: 800px) {
+.tag{
+    display:inline-block;
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:5px 9px;
+    border-radius:5px;
+    font-size:12px;
+    margin:3px;
+    font-weight:bold;
+}
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
+/* ================= SKILLS ================= */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.skill{
+    background:white;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    padding:23px;
+}
+
+.skill h3{
+    color:#0b1f3a;
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.skill p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* ================= CERTIFICATE ================= */
+
+.certificate{
+    background:white;
+}
+
+.certificate-card{
+    max-width:900px;
+}
+
+.certificate-card h3{
+    color:#0b1f3a;
+    font-size:20px;
+}
+
+.certificate-card p{
+    color:#64748b;
+}
+
+/* ================= ACTIVITIES ================= */
+
+.activity-card{
+    max-width:900px;
+}
+
+.activity-card h3{
+    color:#0b1f3a;
+    font-size:21px;
+}
+
+.activity-card p{
+    color:#64748b;
+}
+
+/* ================= LOCATION ================= */
+
+.location{
+    background:white;
+}
+
+.location-box{
+    max-width:900px;
+    background:#0b1f3a;
+    color:white;
+    padding:30px;
+    border-radius:14px;
+}
+
+.location-box p{
+    color:#cbd5e1;
+    margin:10px 0 20px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#0b1f3a;
+    color:white;
+}
+
+.contact .section-title h2{
+    color:white;
+}
+
+.contact .section-title p{
+    color:#cbd5e1;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.contact-box{
+    border:1px solid #334155;
+    border-radius:10px;
+    padding:22px;
+}
+
+.contact-box small{
+    color:#60a5fa;
+    font-weight:bold;
+}
+
+.contact-box a{
+    display:block;
+    color:white;
+    margin-top:6px;
+    word-break:break-word;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#071426;
+    color:#94a3b8;
+    text-align:center;
+    padding:25px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    .nav-container{
+        flex-direction:column;
+        gap:15px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    h1 {
-        font-size: 45px;
+    .about-grid,
+    .project-grid{
+        grid-template-columns:1fr;
     }
 
-    .about,
-    .project-grid {
-        grid-template-columns: 1fr;
+    .skills{
+        grid-template-columns:1fr 1fr;
     }
 
-    .skills {
-        grid-template-columns: 1fr 1fr;
+    .contact-grid{
+        grid-template-columns:1fr;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
-@media(max-width: 500px) {
+@media(max-width:520px){
 
-    .skills {
-        grid-template-columns: 1fr;
+    .hero h1{
+        font-size:45px;
     }
 
-    section {
-        padding: 60px 6%;
+    .hero h2{
+        font-size:20px;
     }
 
-    .hero {
-        padding: 60px 6%;
+    .skills{
+        grid-template-columns:1fr;
     }
+
+    section{
+        padding:60px 0;
+    }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
+
+<!-- ================= NAVBAR ================= -->
+
 <nav>
+
+<div class="container nav-container">
 
     <div class="logo">
         Gowtham <span>M S</span>
     </div>
 
     <ul>
+
         <li><a href="#about">About</a></li>
+
+        <li><a href="#education">Education</a></li>
+
+        <li><a href="#experience">Experience</a></li>
+
         <li><a href="#projects">Projects</a></li>
+
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#location">Location</a></li>
+
+        <li><a href="#activities">Activities</a></li>
+
         <li><a href="#contact">Contact</a></li>
+
     </ul>
+
+</div>
 
 </nav>
 
 
-<!-- HERO SECTION -->
+
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
-    <div class="hero-content">
+<div class="container">
 
-        <div class="small-title">
-            Electrical & Electronics Engineering
-        </div>
+<div class="hero-content">
 
-        <h1>Gowtham M S</h1>
-
-        <h2>
-            EEE Graduate | Power Systems | Protection | Switchgear
-        </h2>
-
-        <p>
-            Electrical and Electronics Engineering graduate with a strong
-            interest in Power Systems, Electrical Protection, Switchgear and
-            industrial technologies. Interested in applying engineering
-            knowledge to practical problems while continuously developing
-            technical and professional skills.
-        </p>
-
-        <div class="buttons">
-
-            <a href="#projects" class="btn primary">
-                View Projects
-            </a>
-
-            <a href="#contact" class="btn secondary">
-                Contact Me
-            </a>
-
-        </div>
-
+    <div class="kicker">
+        ELECTRICAL & ELECTRONICS ENGINEERING
     </div>
 
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-    <div class="section-title">
-
-        <small>PROFILE</small>
-
-        <h2>About Me</h2>
-
-        <p>
-            A brief professional introduction.
-        </p>
-
-    </div>
-
-
-    <div class="about">
-
-        <div class="card">
-
-            <h3>Professional Summary</h3>
-
-            <p>
-                I am an Electrical and Electronics Engineering graduate
-                with a keen interest in electrical power systems and
-                industrial applications.
-            </p>
-
-            <br>
-
-            <p>
-                My core interests include Power Systems, Protection,
-                Switchgear, Electrical Machines, Renewable Energy and
-                Energy Management.
-            </p>
-
-            <br>
-
-            <p>
-                I also have academic exposure to microcontroller-based
-                projects, electrical measurement, simulation and
-                engineering design tools.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Quick Information</h3>
-
-            <ul class="info">
-
-                <li>
-                    <strong>Degree:</strong>
-                    Electrical & Electronics Engineering
-                </li>
-
-                <li>
-                    <strong>Graduation:</strong>
-                    2026
-                </li>
-
-                <li>
-                    <strong>Interest:</strong>
-                    Power Systems & Protection
-                </li>
-
-                <li>
-                    <strong>Tools:</strong>
-                    Proteus, AutoCAD Electrical, EPLAN
-                </li>
-
-                <li>
-                    <strong>Programming:</strong>
-                    C++ Fundamentals
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PROJECTS -->
-
-<section id="projects" class="projects">
-
-    <div class="section-title">
-
-        <small>ENGINEERING WORK</small>
-
-        <h2>Projects</h2>
-
-        <p>
-            Selected academic and technical projects.
-        </p>
-
-    </div>
-
-
-    <div class="project-grid">
-
-
-        <div class="project">
-
-            <div class="project-number">
-                PROJECT 01 / FINAL YEAR PROJECT
-            </div>
-
-            <h3>
-                IoT and ML-Based Intelligent Two-Wheeler Module
-            </h3>
-
-            <p>
-                Developed an intelligent two-wheeler energy-management
-                concept focused on efficient energy usage and
-                eco-friendly transportation.
-            </p>
-
-            <br>
-
-            <p>
-                The system focuses on monitoring important electrical
-                parameters and supporting intelligent energy and
-                load-management functions.
-            </p>
-
-            <div class="tags">
-
-                <span class="tag">PIC Microcontroller</span>
-
-                <span class="tag">Battery Monitoring</span>
-
-                <span class="tag">Voltage</span>
-
-                <span class="tag">Current</span>
-
-                <span class="tag">Temperature</span>
-
-                <span class="tag">Energy Management</span>
-
-            </div>
-
-        </div>
-
-
-        <div class="project">
-
-            <div class="project-number">
-                PROJECT 02 / ELECTRICAL MONITORING
-            </div>
-
-            <h3>
-                DC Motor Parameter Monitoring
-            </h3>
-
-            <p>
-                Designed a monitoring concept for a DC motor application
-                to measure and display important operating parameters.
-            </p>
-
-            <br>
-
-            <p>
-                The project focuses on voltage, current and temperature
-                measurement with sensor interfacing and simulation.
-            </p>
-
-            <div class="tags">
-
-                <span class="tag">DC Motor</span>
-
-                <span class="tag">Sensors</span>
-
-                <span class="tag">Proteus</span>
-
-                <span class="tag">Measurement</span>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-    <div class="section-title">
-
-        <small>TECHNICAL PROFILE</small>
-
-        <h2>Skills & Knowledge</h2>
-
-        <p>
-            Core engineering knowledge and technical tools.
-        </p>
-
-    </div>
-
-
-    <div class="skills">
-
-
-        <div class="skill">
-
-            <h3>Power Systems</h3>
-
-            <p>
-                Generation, transmission, distribution and
-                basic power system concepts.
-            </p>
-
-        </div>
-
-
-        <div class="skill">
-
-            <h3>Protection & Switchgear</h3>
-
-            <p>
-                Protection concepts, relays, circuit breakers
-                and substation fundamentals.
-            </p>
-
-        </div>
-
-
-        <div class="skill">
-
-            <h3>Electrical Machines</h3>
-
-            <p>
-                Transformers, induction machines, DC machines
-                and electrical drives.
-            </p>
-
-        </div>
-
-
-        <div class="skill">
-
-            <h3>Renewable Energy</h3>
-
-            <p>
-                Solar PV, energy storage and renewable
-                energy integration concepts.
-            </p>
-
-        </div>
-
-
-        <div class="skill">
-
-            <h3>Proteus</h3>
-
-            <p>
-                Circuit simulation and microcontroller-based
-                project simulation.
-            </p>
-
-        </div>
-
-
-        <div class="skill">
-
-            <h3>AutoCAD Electrical</h3>
-
-            <p>
-                Basic electrical design and drawing concepts.
-            </p>
-
-        </div>
-
-
-        <div class="skill">
-
-            <h3>EPLAN</h3>
-
-            <p>
-                Basic exposure to electrical engineering
-                documentation and schematic concepts.
-            </p>
-
-        </div>
-
-
-        <div class="skill">
-
-            <h3>PLC & Automation</h3>
-
-            <p>
-                PLC fundamentals, ladder logic, timers,
-                counters and motor control.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- LOCATION -->
-
-<section id="location" class="location">
-
-    <div class="section-title">
-
-        <small>LOCATION</small>
-
-        <h2>Location</h2>
-
-        <p>
-            Available for opportunities across Tamil Nadu and India.
-        </p>
-
-    </div>
-
-
-    <div class="location-box">
-
-        <h3>Salem District, Tamil Nadu, India</h3>
-
-        <p>
-            Open to electrical engineering, maintenance, production,
-            testing, commissioning and related entry-level opportunities.
-        </p>
-
-        <a
-            href="https://www.google.com/maps"
-            target="_blank"
-            class="btn primary">
-
-            Open Google Maps
-
+    <h1>Gowtham M S</h1>
+
+    <h2>
+        Power Systems • Protection • Switchgear
+    </h2>
+
+    <p>
+        I am an Electrical and Electronics Engineering student with an
+        interest in power systems, protection, and switchgear. I am
+        interested in understanding electrical infrastructure and energy
+        distribution systems. Through my academic coursework and projects,
+        I have gained basic technical knowledge and practical exposure.
+        I am looking for opportunities to apply what I have learned and
+        continue to develop my skills through industry experience.
+    </p>
+
+    <div class="buttons">
+
+        <a href="#projects" class="btn primary">
+            View Projects
+        </a>
+
+        <a href="#contact" class="btn secondary">
+            Contact Me
         </a>
 
     </div>
 
-</section>
+</div>
 
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-    <div class="section-title">
-
-        <small>GET IN TOUCH</small>
-
-        <h2>Contact</h2>
-
-        <p>
-            For professional opportunities and engineering discussions.
-        </p>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-
-        <div class="contact-box">
-
-            <small>EMAIL</small>
-
-            <p>
-                yourmail@gmail.com
-            </p>
-
-        </div>
-
-
-        <div class="contact-box">
-
-            <small>PHONE</small>
-
-            <p>
-                +91 XXXXX XXXXX
-            </p>
-
-        </div>
-
-
-        <div class="contact-box">
-
-            <small>LINKEDIN</small>
-
-            <p>
-                linkedin.com/in/your-profile
-            </p>
-
-        </div>
-
-
-    </div>
+</div>
 
 </section>
 
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>PROFILE</small>
+
+    <h2>About Me</h2>
+
+    <p>
+        Electrical engineering background and professional interests.
+    </p>
+
+</div>
+
+
+<div class="about-grid">
+
+
+<div class="card">
+
+    <h3>Professional Summary</h3>
+
+    <p>
+        I am an Electrical and Electronics Engineering student with an
+        interest in power systems, protection, and switchgear. I am
+        interested in understanding electrical infrastructure and energy
+        distribution systems.
+    </p>
+
+    <br>
+
+    <p>
+        Through my academic coursework and projects, I have gained basic
+        technical knowledge and practical exposure. I am looking for
+        opportunities to apply what I have learned and continue to develop
+        my skills through industry experience.
+    </p>
+
+</div>
+
+
+<div class="card">
+
+    <h3>Quick Information</h3>
+
+    <ul class="info">
+
+        <li>
+            <strong>Degree:</strong>
+            Electrical & Electronics Engineering
+        </li>
+
+        <li>
+            <strong>Graduation:</strong>
+            2026
+        </li>
+
+        <li>
+            <strong>Interest:</strong>
+            Power Systems & Protection
+        </li>
+
+        <li>
+            <strong>Tools:</strong>
+            Proteus, AutoCAD Electrical
+        </li>
+
+        <li>
+            <strong>Programming:</strong>
+            C++ Fundamentals
+        </li>
+
+    </ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="education" id="education">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>ACADEMIC BACKGROUND</small>
+
+    <h2>Education</h2>
+
+    <p>
+        Academic qualifications in Electrical and Electronics Engineering.
+    </p>
+
+</div>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+    <div class="date">
+        AUGUST 2023 – MARCH 2026
+    </div>
+
+    <h3>
+        Bachelor of Engineering in Electrical and Electronics Engineering
+    </h3>
+
+    <h4>
+        Sri Krishna College of Technology, Kovaipudur, Coimbatore
+    </h4>
+
+    <p>
+        CGPA: <strong>7.63 / 10</strong>
+    </p>
+
+</div>
+
+
+<div class="timeline-item">
+
+    <div class="date">
+        AUGUST 2020 – MAY 2023
+    </div>
+
+    <h3>
+        Diploma in Electrical and Electronics Engineering
+    </h3>
+
+    <h4>
+        K.S.R Polytechnic College, Tiruchengode, Namakkal
+    </h4>
+
+    <p>
+        Percentage: <strong>93 / 100</strong>
+    </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>INDUSTRY EXPOSURE</small>
+
+    <h2>Experience</h2>
+
+    <p>
+        Practical exposure in battery manufacturing.
+    </p>
+
+</div>
+
+
+<div class="card experience-card">
+
+    <div class="company">
+        Sri Baggiyalakshmi Industries, Salem
+    </div>
+
+    <div class="role">
+        Battery Manufacturing
+    </div>
+
+    <div class="date">
+        December 2024 – January 2025
+    </div>
+
+    <ul>
+
+        <li>
+            Participated in the manufacturing and assembly of high-quality
+            batteries used in automotive, inverter, and solar power
+            applications. Observed and supported production processes to
+            ensure battery durability and efficiency.
+        </li>
+
+        <li>
+            Developed practical knowledge of battery components and modern
+            manufacturing techniques.
+        </li>
+
+    </ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects" id="projects">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>ENGINEERING PROJECTS</small>
+
+    <h2>Projects</h2>
+
+    <p>
+        Academic projects focused on energy management and electrical systems.
+    </p>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<!-- PROJECT 1 -->
+
+<div class="project">
+
+    <div class="project-number">
+        PROJECT 01 · APRIL 2026
+    </div>
+
+    <h3>
+        Smart Two-Wheeler Energy Optimization Using IoT
+    </h3>
+
+    <ul>
+
+        <li>
+            Designed a smart two-wheeler module using IoT sensors to
+            monitor and collect real-time energy consumption data.
+        </li>
+
+        <li>
+            Focused on optimizing energy usage, improving efficiency,
+            and reducing environmental impact through intelligent
+            energy monitoring.
+        </li>
+
+    </ul>
+
+    <div class="tags">
+
+        <span class="tag">IoT</span>
+
+        <span class="tag">Energy Monitoring</span>
+
+        <span class="tag">Sensor Integration</span>
+
+        <span class="tag">Energy Optimization</span>
+
+    </div>
+
+</div>
+
+
+<!-- PROJECT 2 -->
+
+<div class="project">
+
+    <div class="project-number">
+        PROJECT 02 · MAY 2023
+    </div>
+
+    <h3>
+        Power Management System
+    </h3>
+
+    <ul>
+
+        <li>
+            Developed a power management system to efficiently monitor,
+            control, and distribute energy across system components,
+            reducing unnecessary power consumption.
+        </li>
+
+        <li>
+            Improved overall system performance and reliability by
+            optimizing power usage, contributing to longer battery life
+            and energy-efficient operation.
+        </li>
+
+    </ul>
+
+    <div class="tags">
+
+        <span class="tag">Power Management</span>
+
+        <span class="tag">Energy Monitoring</span>
+
+        <span class="tag">Energy Optimization</span>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= TECHNICAL SKILLS ================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>TECHNICAL PROFILE</small>
+
+    <h2>Technical Skills</h2>
+
+    <p>
+        Technical areas and tools from my academic background.
+    </p>
+
+</div>
+
+
+<div class="skills">
+
+
+<div class="skill">
+
+    <h3>Power & Energy Management</h3>
+
+    <p>
+        Knowledge of power and energy management concepts.
+    </p>
+
+</div>
+
+
+<div class="skill">
+
+    <h3>Sensor Integration</h3>
+
+    <p>
+        Basic exposure to sensor integration and energy monitoring.
+    </p>
+
+</div>
+
+
+<div class="skill">
+
+    <h3>Renewable Energy System</h3>
+
+    <p>
+        Academic knowledge of renewable energy system concepts.
+    </p>
+
+</div>
+
+
+<div class="skill">
+
+    <h3>Proteus</h3>
+
+    <p>
+        Basic circuit simulation and project development exposure.
+    </p>
+
+</div>
+
+
+<div class="skill">
+
+    <h3>AutoCAD</h3>
+
+    <p>
+        Basic exposure to AutoCAD for engineering applications.
+    </p>
+
+</div>
+
+
+<div class="skill">
+
+    <h3>Sci Lab</h3>
+
+    <p>
+        Academic exposure to Scilab for engineering applications.
+    </p>
+
+</div>
+
+
+<div class="skill">
+
+    <h3>E-tab</h3>
+
+    <p>
+        Academic exposure to E-tab.
+    </p>
+
+</div>
+
+
+<div class="skill">
+
+    <h3>MS Office</h3>
+
+    <p>
+        MS Word and MS Excel for documentation and academic work.
+    </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CERTIFICATES ================= -->
+
+<section class="certificate" id="certificates">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>CERTIFICATION</small>
+
+    <h2>Certificates</h2>
+
+    <p>
+        Technical learning and skill development.
+    </p>
+
+</div>
+
+
+<div class="card certificate-card">
+
+    <h3>
+        HANDS-ON CIRCUITS AND PCB DESIGN WITH CAD SOFTWARE
+    </h3>
+
+    <div class="date">
+        NPTEL · October 2024
+    </div>
+
+    <p>
+        The NPTEL course is highly helpful for learning the basics of
+        the electrical field. The course has a duration of 12 weeks,
+        and each week includes assignments, making it very effective
+        for skill development.
+    </p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= TECHNICAL ACTIVITY ================= -->
+
+<section id="activities">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>TECHNICAL ACTIVITIES & EVENT ORGANIZATION</small>
+
+    <h2>Circuit Hunting</h2>
+
+    <p>
+        Technical event organization and circuit analysis experience.
+    </p>
+
+</div>
+
+
+<div class="card activity-card">
+
+    <h3>
+        Circuit Hunting – Event Organizer & Circuit Analyzer
+    </h3>
+
+    <div class="date">
+        January 2024
+    </div>
+
+    <p>
+        Organized and conducted the Circuit Hunting technical event,
+        including selection and preparation of challenging
+        electrical/electronic circuit diagrams, designing the competition
+        process for participants to assemble, analyze, and determine
+        circuit outputs, evaluating their results, and coordinating the
+        event for smooth execution.
+    </p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= LOCATION ================= -->
+
+<section class="location" id="location">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>LOCATION</small>
+
+    <h2>Location</h2>
+
+    <p>
+        Open to engineering opportunities across Tamil Nadu and India.
+    </p>
+
+</div>
+
+
+<div class="location-box">
+
+    <h3>
+        Tamil Nadu, India
+    </h3>
+
+    <p>
+        Interested in opportunities related to electrical engineering,
+        power systems, maintenance, production, testing, and other
+        entry-level engineering roles.
+    </p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>GET IN TOUCH</small>
+
+    <h2>Contact</h2>
+
+    <p>
+        For professional opportunities and engineering discussions.
+    </p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+    <small>EMAIL</small>
+
+    <a href="mailto:msgowtham825@gmail.com">
+        msgowtham825@gmail.com
+    </a>
+
+</div>
+
+
+<div class="contact-box">
+
+    <small>PHONE</small>
+
+    <a href="tel:+919952345307">
+        +91 99523 45307
+    </a>
+
+</div>
+
+
+<div class="contact-box">
+
+    <small>LINKEDIN</small>
+
+    <a
+        href="https://www.linkedin.com/in/gowtham-m-s-b5a2362a3/"
+        target="_blank">
+
+        View LinkedIn Profile
+
+    </a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    © 2026
-    <strong>Gowtham M S</strong>
+    © 2026 <strong>Gowtham M S</strong>
     · Electrical & Electronics Engineering
 
 </footer>
+
 
 </body>
 </html>
