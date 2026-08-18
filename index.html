@@ -273,6 +273,7 @@ section{
 
 .project-card{
     transition:.25s;
+    height:100%;
 }
 
 .project-card:hover{
@@ -919,6 +920,42 @@ Explore the technical case study behind the final-year project.
 
 </div>
 
+
+<div class="project-grid">
+
+
+<div class="project-card">
+
+<div class="project-num">
+FINAL YEAR PROJECT · APRIL 2026
+</div>
+
+<h3>
+Smart Two-Wheeler Energy Optimization Using IoT
+</h3>
+
+<p>
+A hardware-based energy management module integrating battery
+monitoring, renewable-energy sources, active thermal management
+and emergency wireless charging.
+</p>
+
+<div class="tags">
+
+<span class="tag">STM32</span>
+<span class="tag">Energy Management</span>
+<span class="tag">Solar</span>
+<span class="tag">Dynamo</span>
+<span class="tag">Battery</span>
+
+</div>
+
+<a class="btn primary" href="#case-study">
+View Full Case Study →
+</a>
+
+</div>
+
 <div class="project-card">
 
 <div class="project-num">
@@ -954,41 +991,1390 @@ View Full Case Study →
 </a>
 
 </div>
-<div class="project-grid">
 
-
-<div class="project-card">
-
-<div class="project-num">
-FINAL YEAR PROJECT · APRIL 2026
 </div>
 
-<h3>
+
+</div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- ================= PROJECT CASE STUDY ==================== -->
+<!-- ========================================================= -->
+
+<section class="case-study" id="case-study">
+
+<div class="container">
+
+
+<div class="case-hero">
+
+<div class="case-label">
+PROJECT CASE STUDY · 01
+</div>
+
+<h2>
 Smart Two-Wheeler Energy Optimization Using IoT
-</h3>
+</h2>
 
 <p>
 A hardware-based energy management module integrating battery
-monitoring, renewable-energy sources, active thermal management
-and emergency wireless charging.
+monitoring, renewable-energy integration, active thermal management
+and emergency wireless charging for an electric two-wheeler application.
 </p>
 
 <div class="tags">
 
-<span class="tag">STM32</span>
+<span class="tag">STM32 Microcontroller</span>
 <span class="tag">Energy Management</span>
+<span class="tag">Battery Monitoring</span>
 <span class="tag">Solar</span>
 <span class="tag">Dynamo</span>
-<span class="tag">Battery</span>
+<span class="tag">Thermal Management</span>
+<span class="tag">Wireless Charging</span>
 
 </div>
 
-<a class="btn primary" href="#case-study">
-View Full Case Study →
-</a>
+</div>
+
+
+<div class="case-grid">
+
+
+<!-- ================= 01 OVERVIEW ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>01</span>
+Project Overview
+</h3>
+
+<p>
+This project presents a multi-source hardware energy management
+module designed for electric two-wheelers. The system integrates
+battery monitoring, renewable-energy integration, active thermal
+management and emergency wireless charging within a single
+hardware platform.
+</p>
+
+<p style="margin-top:10px">
+
+A 12 V lithium-ion battery is monitored using voltage, current and
+temperature sensing. Solar and dynamo sources are incorporated as
+supplementary charging sources, while the STM32-based control unit
+manages sensing, protection and energy-management functions.
+
+</p>
+
+</article>
+
+
+<!-- ================= 02 GOAL ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>02</span>
+Goal
+</h3>
+
+<ul>
+
+<li>
+Continuously monitor battery voltage, current and temperature.
+</li>
+
+<li>
+Protect the battery from over-voltage, under-voltage and overheating.
+</li>
+
+<li>
+Integrate solar and dynamo sources as supplementary charging sources.
+</li>
+
+<li>
+Select and manage the available charging source.
+</li>
+
+<li>
+Automatically operate the cooling system when temperature rises.
+</li>
+
+<li>
+Provide emergency short-range wireless energy transfer.
+</li>
+
+<li>
+Validate sensing and energy-management functions experimentally.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 03 ARCHITECTURE ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>03</span>
+System Architecture
+</h3>
+
+<p>
+The architecture combines energy sources, battery storage, sensing,
+STM32-based control and protection/output stages.
+</p>
+
+
+<div class="arch">
+
+<div class="node">
+Solar Panel
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Power Control
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+12V Li-ion Battery
+</div>
 
 </div>
-    
+
+
+<div class="arch">
+
+<div class="node">
+Dynamo Generator
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Charging / Source Selection
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Battery
+</div>
+
+</div>
+
+
+<div class="arch">
+
+<div class="node">
+Voltage Sensor
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Current Sensor
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Temperature Sensor
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+STM32 MCU
+</div>
+
+</div>
+
+
+<div class="arch">
+
+<div class="node">
+STM32 Control
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Protection
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Cooling Fan / Source Control
+</div>
+
+</div>
+
+</article>
+
+
+<!-- ================= 04 BUILD ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>04</span>
+Build Process
+</h3>
+
+
+<div class="process">
+
+
+<div class="step">
+
+<b>
+STEP 01
+</b>
+
+<h4>
+Battery & Sensing
+</h4>
+
+<p>
+A 12 V lithium-ion battery was used as the energy-storage unit.
+Voltage, current and temperature sensing were incorporated for
+continuous monitoring.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 02
+</b>
+
+<h4>
+STM32 Control
+</h4>
+
+<p>
+The STM32 microcontroller was used as the central embedded control
+unit for sensor acquisition, processing and control decisions.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 03
+</b>
+
+<h4>
+Renewable Integration
+</h4>
+
+<p>
+Solar and dynamo sources were integrated as supplementary charging
+sources with source selection and switching logic.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 04
+</b>
+
+<h4>
+Thermal & Emergency Functions
+</h4>
+
+<p>
+A temperature-controlled cooling fan and an emergency short-range
+wireless power-transfer module were integrated and tested.
+</p>
+
+</div>
+
+
+</div>
+
+</article>
+
+
+<!-- ================= 05 FAULT ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>05</span>
+Fault Detection and EFD Logic
+</h3>
+
+<p>
+The system continuously monitors battery voltage, current and
+temperature and compares measured values with predefined safe
+operating limits. The STM32-based control logic uses these
+conditions to initiate the required protection or corrective response.
+</p>
+
+
+<div class="arch">
+
+<div class="node">
+Sensor Measurement
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+STM32 Data Acquisition
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Limit Comparison
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Protection / Response
+</div>
+
+</div>
+
+
+<ul style="margin-top:15px;padding-left:20px">
+
+<li>
+<b>Under-voltage:</b>
+non-essential loads are switched out to avoid complete discharge.
+</li>
+
+<li>
+<b>Over-voltage:</b>
+charging is limited when the battery reaches its maximum safe voltage.
+</li>
+
+<li>
+<b>Over-temperature:</b>
+the cooling system is activated when battery temperature rises above
+the defined threshold.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 06 CHALLENGES ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>06</span>
+Challenges and Engineering Decisions
+</h3>
+
+<ul>
+
+<li>
+Integrating multiple energy sources into one hardware
+energy-management architecture.
+</li>
+
+<li>
+Reliable acquisition and validation of voltage, current and
+temperature measurements.
+</li>
+
+<li>
+Maintaining battery safety limits during charging and operation.
+</li>
+
+<li>
+Implementing solar/dynamo source selection and switching.
+</li>
+
+<li>
+Providing automatic thermal protection using a cooling fan.
+</li>
+
+<li>
+Integrating emergency wireless power transfer into the prototype.
+</li>
+
+<li>
+Keeping the system modular, practical and cost-conscious.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 07 RESULTS ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>07</span>
+Results and Evidence
+</h3>
+
+<p>
+The prototype was experimentally validated using reference
+instruments and different operating conditions. The measured sensor
+values showed close agreement with reference readings.
+</p>
+
+
+<div class="metric-grid">
+
+
+<div class="metric">
+
+<strong>
+Voltage Sensing
+</strong>
+
+<span>
+99.68%, 99.59%, 99.41%, 99.30% and 99.37% accuracy across
+the tested battery conditions.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Temperature Sensing
+</strong>
+
+<span>
+99.33% to 99.75% accuracy across the 30°C–50°C reference range.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Solar Output
+</strong>
+
+<span>
+12.5 W recorded during daytime;
+0 W during nighttime testing.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Dynamo Output
+</strong>
+
+<span>
+6.2 W during daytime testing and 6.0 W during nighttime testing.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Cooling Response
+</strong>
+
+<span>
+Temperature reduced from approximately 50°C to 40°C in about
+4 minutes after fan activation.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Wireless Charging
+</strong>
+
+<span>
+Recipient battery voltage increased by approximately 0.3 V
+during the 15-minute test.
+</span>
+
+</div>
+
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="case-study" id="diploma-case-study">
+
+<div class="container">
+
+<div class="case-hero">
+
+<div class="case-label">
+DIPLOMA PROJECT · MAY 2023
+</div>
+
+<h2>
+Hybrid Solar-Wind Power Management System
+</h2>
+
+<p>
+A hybrid renewable energy power-generation and management system
+developed by integrating solar and wind energy sources to generate
+electrical power as an alternative and backup source to conventional
+EB supply.
+</p>
+
+<div class="tags">
+
+<span class="tag">Solar Energy</span>
+<span class="tag">Wind Energy</span>
+<span class="tag">Hybrid Power Generation</span>
+<span class="tag">Power Management</span>
+<span class="tag">Load Management</span>
+<span class="tag">Renewable Energy</span>
+
+</div>
+
+</div>
+
+
+<div class="case-grid">
+
+
+<!-- ================= 01 PROJECT OVERVIEW ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>01</span>
+Project Overview
+</h3>
+
+<p>
+The main idea of this diploma project was to develop a hybrid
+renewable energy system using two renewable energy sources:
+solar energy and wind energy.
+</p>
+
+<p style="margin-top:10px">
+
+The solar source converts available sunlight into electrical power,
+while the wind source generates electrical power from available wind
+energy. The outputs from both sources are managed and supplied to
+the connected electrical load.
+</p>
+
+<p style="margin-top:10px">
+
+The project was developed with the objective of using renewable
+energy as an alternative and backup source to conventional EB
+supply. Instead of depending completely on a single source, the
+system combines two renewable sources so that the available energy
+can be utilized according to the operating conditions.
+</p>
+
+<p style="margin-top:10px">
+
+This project provided practical exposure to renewable power
+generation, source integration, power conversion, power management
+and electrical load operation.
+</p>
+
+</article>
+
+
+<!-- ================= 02 GOAL ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>02</span>
+Goal
+</h3>
+
+<ul>
+
+<li>
+Generate electrical power from both solar and wind energy sources.
+</li>
+
+<li>
+Combine two renewable sources into a hybrid power-generation system.
+</li>
+
+<li>
+Use renewable energy as an alternative and backup to conventional
+EB supply.
+</li>
+
+<li>
+Manage the generated power before supplying it to the connected load.
+</li>
+
+<li>
+Improve the utilization of available renewable energy.
+</li>
+
+<li>
+Reduce dependency on conventional grid power whenever renewable
+energy is available.
+</li>
+
+<li>
+Understand the practical challenges involved in variable renewable
+power generation.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 03 SYSTEM ARCHITECTURE ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>03</span>
+System Architecture
+</h3>
+
+<p>
+The system consists of two renewable energy sources, power
+conditioning sections, a common power-management stage and the
+connected electrical load.
+</p>
+
+
+<div class="arch">
+
+<div class="node">
+Solar Panel
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Solar Power Conditioning
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Power Management
+</div>
+
+</div>
+
+
+<div class="arch">
+
+<div class="node">
+Wind Generator
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Wind Power Conditioning
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Power Management
+</div>
+
+</div>
+
+
+<div class="arch">
+
+<div class="node">
+Solar Energy
+</div>
+
+<div class="arrow">
++
+</div>
+
+<div class="node">
+Wind Energy
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Hybrid Power Management
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Electrical Load
+</div>
+
+</div>
+
+
+<p style="margin-top:18px">
+
+The solar and wind sources produce electrical power under different
+environmental conditions. The power-management section handles the
+available generated power and supplies it to the connected load.
+This arrangement demonstrates the basic concept of a hybrid
+renewable energy supply system.
+
+</p>
+
+</article>
+
+
+<!-- ================= 04 BUILD PROCESS ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>04</span>
+Build Process
+</h3>
+
+
+<div class="process">
+
+
+<div class="step">
+
+<b>
+STEP 01
+</b>
+
+<h4>
+Solar Power Generation
+</h4>
+
+<p>
+A solar panel was used as the first renewable energy source.
+The panel converts sunlight into electrical power for the system.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 02
+</b>
+
+<h4>
+Wind Power Generation
+</h4>
+
+<p>
+A wind-based generator was used as the second renewable source.
+The generator converts available wind energy into electrical power.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 03
+</b>
+
+<h4>
+Power Conditioning
+</h4>
+
+<p>
+The generated electrical power from the renewable sources was
+processed so that it could be used effectively by the connected
+system and load.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 04
+</b>
+
+<h4>
+Power Management</h4>
+
+<p>
+The available power from the solar and wind sources was managed
+according to source availability and load requirements.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 05
+</b>
+
+<h4>
+Load Connection
+</h4>
+
+<p>
+The managed renewable power was supplied to the connected
+electrical load to demonstrate practical power utilization.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 06
+</b>
+
+<h4>
+Testing</h4>
+
+<p>
+The system was tested under different source conditions to
+observe renewable power generation and load operation.
+</p>
+
+</div>
+
+
+</div>
+
+</article>
+
+
+<!-- ================= 05 FAULT DETECTION ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>05</span>
+Fault Detection and EFD Logic
+</h3>
+
+<p>
+The system was designed with basic monitoring and control
+considerations to maintain safe operation of the renewable
+sources and connected load.
+</p>
+
+<p style="margin-top:10px">
+
+The generated power was observed before supplying the load.
+When the available renewable power changed because of sunlight
+or wind conditions, the power-management section was used to
+handle the available power appropriately.
+</p>
+
+
+<div class="arch">
+
+<div class="node">
+Solar / Wind Source
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Power Monitoring
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Condition Check
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Power Management
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Load
+</div>
+
+</div>
+
+
+<ul style="margin-top:15px;padding-left:20px">
+
+<li>
+<b>Low solar availability:</b>
+the solar output reduces when sunlight is insufficient.
+</li>
+
+<li>
+<b>Low wind availability:</b>
+wind generation changes according to the available wind condition.
+</li>
+
+<li>
+<b>Source variation:</b>
+the generated renewable power is not constant, so the available
+power must be managed before supplying the load.
+</li>
+
+<li>
+<b>Load requirement:</b>
+the available renewable power is utilized according to the
+connected load requirement.
+</li>
+
+<li>
+<b>Safe operation:</b>
+the power-management section helps maintain suitable operation
+between the renewable sources and the connected load.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 06 CHALLENGES ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>06</span>
+Challenges and Engineering Decisions
+</h3>
+
+<ul>
+
+<li>
+Solar power generation changes with sunlight intensity, weather
+conditions and time of day.
+</li>
+
+<li>
+Wind power generation changes with wind speed and operating
+conditions.
+</li>
+
+<li>
+Integrating two variable renewable sources into one system requires
+proper power management.
+</li>
+
+<li>
+The generated power from renewable sources may not always be
+sufficient for the connected load.
+</li>
+
+<li>
+Power-conditioning stages are required to make the generated
+power suitable for practical utilization.
+</li>
+
+<li>
+The system needs to handle changes in renewable power availability
+without affecting the connected load unnecessarily.
+</li>
+
+<li>
+The project was designed with a practical focus on renewable
+energy utilization and reduction of dependency on conventional
+EB supply.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 07 RESULTS ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>07</span>
+Results and Evidence
+</h3>
+
+<p>
+The developed prototype demonstrated the basic feasibility of
+generating electrical power from two renewable sources and
+utilizing the generated energy through a common power-management
+approach.
+</p>
+
+<p style="margin-top:10px">
+
+The project successfully demonstrated the concept of a hybrid
+solar-wind power system where the available renewable energy can
+be used to support an electrical load as an alternative or backup
+to conventional EB supply.
+</p>
+
+
+<div class="metric-grid">
+
+
+<div class="metric">
+
+<strong>
+Solar Power Generation
+</strong>
+
+<span>
+Electrical power was generated from the solar energy source
+under suitable sunlight conditions.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Wind Power Generation
+</strong>
+
+<span>
+Electrical power was generated from the wind source under
+available wind conditions.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Hybrid Power Generation
+</strong>
+
+<span>
+Solar and wind sources were integrated into a common renewable
+power-management system.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Alternative EB Supply
+</strong>
+
+<span>
+The renewable system demonstrated the concept of an alternative
+and backup source to conventional EB power.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Power Management
+</strong>
+
+<span>
+Generated renewable power was managed according to source
+availability and connected load requirements.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Energy Utilization
+</strong>
+
+<span>
+The project demonstrated practical utilization of renewable
+energy for electrical load operation.
+</span>
+
+</div>
+
+
+</div>
+
+<p class="note">
+Note: Actual voltage, current and power measurements should be
+added here if available from the original diploma project records.
+</p>
+
+</article>
+
+
+<!-- ================= 09 ENGINEERING LEARNING ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>09</span>
+Engineering Knowledge Gained
+</h3>
+
+<ul>
+
+<li>
+Basic understanding of solar photovoltaic power generation.
+</li>
+
+<li>
+Basic understanding of wind-based electrical power generation.
+</li>
+
+<li>
+Understanding of hybrid renewable energy systems.
+</li>
+
+<li>
+Power conversion and power-conditioning concepts.
+</li>
+
+<li>
+Power management and electrical load management.
+</li>
+
+<li>
+Understanding of renewable-source variation.
+</li>
+
+<li>
+Basic electrical measurement and testing.
+</li>
+
+<li>
+Practical understanding of alternative power generation.
+</li>
+
+</ul>
+
+</article>
+
+</div>
+
+</div>
+
+</section><section id="skills">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">
+TECHNICAL PROFILE
+</div>
+
+<h2>
+Skills
+</h2>
+
+</div>
+
+
+<div class="skills">
+
+
+<div class="skill">
+<h3>
+Power & Energy Management
+</h3>
+
+<p>
+Academic knowledge of power and energy management concepts.
+</p>
+
+</div>
+
+
+<div class="skill">
+<h3>
+Sensor Integration
+</h3>
+
+<p>
+Basic exposure to sensor integration and real-time parameter monitoring.
+</p>
+
+</div>
+
+
+<div class="skill">
+<h3>
+Renewable Energy Systems
+</h3>
+
+<p>
+Academic knowledge of renewable energy system concepts.
+</p>
+
+</div>
+
+
+<div class="skill">
+<h3>
+Proteus
+</h3>
+
+<p>
+Circuit simulation and project development exposure.
+</p>
+
+</div>
+
+
+<div class="skill">
+<h3>
+AutoCAD
+</h3>
+
+<p>
+Basic exposure to AutoCAD for engineering applications.
+</p>
+
+</div>
+
+
+<div class="skill">
+<h3>
+Scilab
+</h3>
+
+<p>
+Academic exposure to Scilab for engineering applications.
+</p>
+
+</div>
+
+
+<div class="skill">
+<h3>
+ETAP
+</h3>
+
+<p>
+Academic exposure to ETAP for electrical system studies.
+</p>
+
+</div>
+
+
+<div class="skill">
+<h3>
+MS Office
+</h3>
+
+<p>
+MS Word and MS Excel for documentation and academic work.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
 <!-- ========================================================= -->
 <!-- ============== DIPLOMA PROJECT CASE STUDY ============== -->
 <!-- ========================================================= -->
@@ -1677,687 +3063,6 @@ Practical understanding of alternative power generation.
 </ul>
 
 </article>
-
-
-<!-- ========================================================= -->
-<!-- ================= PROJECT CASE STUDY ==================== -->
-<!-- ========================================================= -->
-
-<section class="case-study" id="case-study">
-
-<div class="container">
-
-
-<div class="case-hero">
-
-<div class="case-label">
-PROJECT CASE STUDY · 01
-</div>
-
-<h2>
-Smart Two-Wheeler Energy Optimization Using IoT
-</h2>
-
-<p>
-A hardware-based energy management module integrating battery
-monitoring, renewable-energy integration, active thermal management
-and emergency wireless charging for an electric two-wheeler application.
-</p>
-
-<div class="tags">
-
-<span class="tag">STM32 Microcontroller</span>
-<span class="tag">Energy Management</span>
-<span class="tag">Battery Monitoring</span>
-<span class="tag">Solar</span>
-<span class="tag">Dynamo</span>
-<span class="tag">Thermal Management</span>
-<span class="tag">Wireless Charging</span>
-
-</div>
-
-</div>
-
-
-<div class="case-grid">
-
-
-<!-- ================= 01 OVERVIEW ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>01</span>
-Project Overview
-</h3>
-
-<p>
-This project presents a multi-source hardware energy management
-module designed for electric two-wheelers. The system integrates
-battery monitoring, renewable-energy integration, active thermal
-management and emergency wireless charging within a single
-hardware platform.
-</p>
-
-<p style="margin-top:10px">
-
-A 12 V lithium-ion battery is monitored using voltage, current and
-temperature sensing. Solar and dynamo sources are incorporated as
-supplementary charging sources, while the STM32-based control unit
-manages sensing, protection and energy-management functions.
-
-</p>
-
-</article>
-
-
-<!-- ================= 02 GOAL ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>02</span>
-Goal
-</h3>
-
-<ul>
-
-<li>
-Continuously monitor battery voltage, current and temperature.
-</li>
-
-<li>
-Protect the battery from over-voltage, under-voltage and overheating.
-</li>
-
-<li>
-Integrate solar and dynamo sources as supplementary charging sources.
-</li>
-
-<li>
-Select and manage the available charging source.
-</li>
-
-<li>
-Automatically operate the cooling system when temperature rises.
-</li>
-
-<li>
-Provide emergency short-range wireless energy transfer.
-</li>
-
-<li>
-Validate sensing and energy-management functions experimentally.
-</li>
-
-</ul>
-
-</article>
-
-
-<!-- ================= 03 ARCHITECTURE ================= -->
-
-<article class="case-section full">
-
-<h3>
-<span>03</span>
-System Architecture
-</h3>
-
-<p>
-The architecture combines energy sources, battery storage, sensing,
-STM32-based control and protection/output stages.
-</p>
-
-
-<div class="arch">
-
-<div class="node">
-Solar Panel
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Power Control
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-12V Li-ion Battery
-</div>
-
-</div>
-
-
-<div class="arch">
-
-<div class="node">
-Dynamo Generator
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Charging / Source Selection
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Battery
-</div>
-
-</div>
-
-
-<div class="arch">
-
-<div class="node">
-Voltage Sensor
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Current Sensor
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Temperature Sensor
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-STM32 MCU
-</div>
-
-</div>
-
-
-<div class="arch">
-
-<div class="node">
-STM32 Control
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Protection
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Cooling Fan / Source Control
-</div>
-
-</div>
-
-</article>
-
-
-<!-- ================= 04 BUILD ================= -->
-
-<article class="case-section full">
-
-<h3>
-<span>04</span>
-Build Process
-</h3>
-
-
-<div class="process">
-
-
-<div class="step">
-
-<b>
-STEP 01
-</b>
-
-<h4>
-Battery & Sensing
-</h4>
-
-<p>
-A 12 V lithium-ion battery was used as the energy-storage unit.
-Voltage, current and temperature sensing were incorporated for
-continuous monitoring.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<b>
-STEP 02
-</b>
-
-<h4>
-STM32 Control
-</h4>
-
-<p>
-The STM32 microcontroller was used as the central embedded control
-unit for sensor acquisition, processing and control decisions.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<b>
-STEP 03
-</b>
-
-<h4>
-Renewable Integration
-</h4>
-
-<p>
-Solar and dynamo sources were integrated as supplementary charging
-sources with source selection and switching logic.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<b>
-STEP 04
-</b>
-
-<h4>
-Thermal & Emergency Functions
-</h4>
-
-<p>
-A temperature-controlled cooling fan and an emergency short-range
-wireless power-transfer module were integrated and tested.
-</p>
-
-</div>
-
-
-</div>
-
-</article>
-
-
-<!-- ================= 05 FAULT ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>05</span>
-Fault Detection and EFD Logic
-</h3>
-
-<p>
-The system continuously monitors battery voltage, current and
-temperature and compares measured values with predefined safe
-operating limits. The STM32-based control logic uses these
-conditions to initiate the required protection or corrective response.
-</p>
-
-
-<div class="arch">
-
-<div class="node">
-Sensor Measurement
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-STM32 Data Acquisition
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Limit Comparison
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Protection / Response
-</div>
-
-</div>
-
-
-<ul style="margin-top:15px;padding-left:20px">
-
-<li>
-<b>Under-voltage:</b>
-non-essential loads are switched out to avoid complete discharge.
-</li>
-
-<li>
-<b>Over-voltage:</b>
-charging is limited when the battery reaches its maximum safe voltage.
-</li>
-
-<li>
-<b>Over-temperature:</b>
-the cooling system is activated when battery temperature rises above
-the defined threshold.
-</li>
-
-</ul>
-
-</article>
-
-
-<!-- ================= 06 CHALLENGES ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>06</span>
-Challenges and Engineering Decisions
-</h3>
-
-<ul>
-
-<li>
-Integrating multiple energy sources into one hardware
-energy-management architecture.
-</li>
-
-<li>
-Reliable acquisition and validation of voltage, current and
-temperature measurements.
-</li>
-
-<li>
-Maintaining battery safety limits during charging and operation.
-</li>
-
-<li>
-Implementing solar/dynamo source selection and switching.
-</li>
-
-<li>
-Providing automatic thermal protection using a cooling fan.
-</li>
-
-<li>
-Integrating emergency wireless power transfer into the prototype.
-</li>
-
-<li>
-Keeping the system modular, practical and cost-conscious.
-</li>
-
-</ul>
-
-</article>
-
-
-<!-- ================= 07 RESULTS ================= -->
-
-<article class="case-section full">
-
-<h3>
-<span>07</span>
-Results and Evidence
-</h3>
-
-<p>
-The prototype was experimentally validated using reference
-instruments and different operating conditions. The measured sensor
-values showed close agreement with reference readings.
-</p>
-
-
-<div class="metric-grid">
-
-
-<div class="metric">
-
-<strong>
-Voltage Sensing
-</strong>
-
-<span>
-99.68%, 99.59%, 99.41%, 99.30% and 99.37% accuracy across
-the tested battery conditions.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Temperature Sensing
-</strong>
-
-<span>
-99.33% to 99.75% accuracy across the 30°C–50°C reference range.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Solar Output
-</strong>
-
-<span>
-12.5 W recorded during daytime;
-0 W during nighttime testing.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Dynamo Output
-</strong>
-
-<span>
-6.2 W during daytime testing and 6.0 W during nighttime testing.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Cooling Response
-</strong>
-
-<span>
-Temperature reduced from approximately 50°C to 40°C in about
-4 minutes after fan activation.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Wireless Charging
-</strong>
-
-<span>
-Recipient battery voltage increased by approximately 0.3 V
-during the 15-minute test.
-</span>
-
-</div>
-
-
-</div>
-
-</article>
-    
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills">
-
-<div class="container">
-
-<div class="section-head">
-
-<div class="eyebrow">
-TECHNICAL PROFILE
-</div>
-
-<h2>
-Skills
-</h2>
-
-</div>
-
-
-<div class="skills">
-
-
-<div class="skill">
-<h3>
-Power & Energy Management
-</h3>
-
-<p>
-Academic knowledge of power and energy management concepts.
-</p>
-
-</div>
-
-
-<div class="skill">
-<h3>
-Sensor Integration
-</h3>
-
-<p>
-Basic exposure to sensor integration and real-time parameter monitoring.
-</p>
-
-</div>
-
-
-<div class="skill">
-<h3>
-Renewable Energy Systems
-</h3>
-
-<p>
-Academic knowledge of renewable energy system concepts.
-</p>
-
-</div>
-
-
-<div class="skill">
-<h3>
-Proteus
-</h3>
-
-<p>
-Circuit simulation and project development exposure.
-</p>
-
-</div>
-
-
-<div class="skill">
-<h3>
-AutoCAD
-</h3>
-
-<p>
-Basic exposure to AutoCAD for engineering applications.
-</p>
-
-</div>
-
-
-<div class="skill">
-<h3>
-Scilab
-</h3>
-
-<p>
-Academic exposure to Scilab for engineering applications.
-</p>
-
-</div>
-
-
-<div class="skill">
-<h3>
-ETAP
-</h3>
-
-<p>
-Academic exposure to ETAP for electrical system studies.
-</p>
-
-</div>
-
-
-<div class="skill">
-<h3>
-MS Office
-</h3>
-
-<p>
-MS Word and MS Excel for documentation and academic work.
-</p>
-
-</div>
-
 
 </div>
 
