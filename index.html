@@ -989,6 +989,565 @@ View Full Case Study →
 </a>
 
 </div>
+
+
+<!-- ========================================================= -->
+<!-- ================= PROJECT CASE STUDY ==================== -->
+<!-- ========================================================= -->
+
+<section class="case-study" id="case-study">
+
+<div class="container">
+
+
+<div class="case-hero">
+
+<div class="case-label">
+PROJECT CASE STUDY · 01
+</div>
+
+<h2>
+Smart Two-Wheeler Energy Optimization Using IoT
+</h2>
+
+<p>
+A hardware-based energy management module integrating battery
+monitoring, renewable-energy integration, active thermal management
+and emergency wireless charging for an electric two-wheeler application.
+</p>
+
+<div class="tags">
+
+<span class="tag">STM32 Microcontroller</span>
+<span class="tag">Energy Management</span>
+<span class="tag">Battery Monitoring</span>
+<span class="tag">Solar</span>
+<span class="tag">Dynamo</span>
+<span class="tag">Thermal Management</span>
+<span class="tag">Wireless Charging</span>
+
+</div>
+
+</div>
+
+
+<div class="case-grid">
+
+
+<!-- ================= 01 OVERVIEW ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>01</span>
+Project Overview
+</h3>
+
+<p>
+This project presents a multi-source hardware energy management
+module designed for electric two-wheelers. The system integrates
+battery monitoring, renewable-energy integration, active thermal
+management and emergency wireless charging within a single
+hardware platform.
+</p>
+
+<p style="margin-top:10px">
+
+A 12 V lithium-ion battery is monitored using voltage, current and
+temperature sensing. Solar and dynamo sources are incorporated as
+supplementary charging sources, while the STM32-based control unit
+manages sensing, protection and energy-management functions.
+
+</p>
+
+</article>
+
+
+<!-- ================= 02 GOAL ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>02</span>
+Goal
+</h3>
+
+<ul>
+
+<li>
+Continuously monitor battery voltage, current and temperature.
+</li>
+
+<li>
+Protect the battery from over-voltage, under-voltage and overheating.
+</li>
+
+<li>
+Integrate solar and dynamo sources as supplementary charging sources.
+</li>
+
+<li>
+Select and manage the available charging source.
+</li>
+
+<li>
+Automatically operate the cooling system when temperature rises.
+</li>
+
+<li>
+Provide emergency short-range wireless energy transfer.
+</li>
+
+<li>
+Validate sensing and energy-management functions experimentally.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 03 ARCHITECTURE ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>03</span>
+System Architecture
+</h3>
+
+<p>
+The architecture combines energy sources, battery storage, sensing,
+STM32-based control and protection/output stages.
+</p>
+
+
+<div class="arch">
+
+<div class="node">
+Solar Panel
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Power Control
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+12V Li-ion Battery
+</div>
+
+</div>
+
+
+<div class="arch">
+
+<div class="node">
+Dynamo Generator
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Charging / Source Selection
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Battery
+</div>
+
+</div>
+
+
+<div class="arch">
+
+<div class="node">
+Voltage Sensor
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Current Sensor
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Temperature Sensor
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+STM32 MCU
+</div>
+
+</div>
+
+
+<div class="arch">
+
+<div class="node">
+STM32 Control
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Protection
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Cooling Fan / Source Control
+</div>
+
+</div>
+
+</article>
+
+
+<!-- ================= 04 BUILD ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>04</span>
+Build Process
+</h3>
+
+
+<div class="process">
+
+
+<div class="step">
+
+<b>
+STEP 01
+</b>
+
+<h4>
+Battery & Sensing
+</h4>
+
+<p>
+A 12 V lithium-ion battery was used as the energy-storage unit.
+Voltage, current and temperature sensing were incorporated for
+continuous monitoring.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 02
+</b>
+
+<h4>
+STM32 Control
+</h4>
+
+<p>
+The STM32 microcontroller was used as the central embedded control
+unit for sensor acquisition, processing and control decisions.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 03
+</b>
+
+<h4>
+Renewable Integration
+</h4>
+
+<p>
+Solar and dynamo sources were integrated as supplementary charging
+sources with source selection and switching logic.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<b>
+STEP 04
+</b>
+
+<h4>
+Thermal & Emergency Functions
+</h4>
+
+<p>
+A temperature-controlled cooling fan and an emergency short-range
+wireless power-transfer module were integrated and tested.
+</p>
+
+</div>
+
+
+</div>
+
+</article>
+
+
+<!-- ================= 05 FAULT ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>05</span>
+Fault Detection and EFD Logic
+</h3>
+
+<p>
+The system continuously monitors battery voltage, current and
+temperature and compares measured values with predefined safe
+operating limits. The STM32-based control logic uses these
+conditions to initiate the required protection or corrective response.
+</p>
+
+
+<div class="arch">
+
+<div class="node">
+Sensor Measurement
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+STM32 Data Acquisition
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Limit Comparison
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Protection / Response
+</div>
+
+</div>
+
+
+<ul style="margin-top:15px;padding-left:20px">
+
+<li>
+<b>Under-voltage:</b>
+non-essential loads are switched out to avoid complete discharge.
+</li>
+
+<li>
+<b>Over-voltage:</b>
+charging is limited when the battery reaches its maximum safe voltage.
+</li>
+
+<li>
+<b>Over-temperature:</b>
+the cooling system is activated when battery temperature rises above
+the defined threshold.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 06 CHALLENGES ================= -->
+
+<article class="case-section">
+
+<h3>
+<span>06</span>
+Challenges and Engineering Decisions
+</h3>
+
+<ul>
+
+<li>
+Integrating multiple energy sources into one hardware
+energy-management architecture.
+</li>
+
+<li>
+Reliable acquisition and validation of voltage, current and
+temperature measurements.
+</li>
+
+<li>
+Maintaining battery safety limits during charging and operation.
+</li>
+
+<li>
+Implementing solar/dynamo source selection and switching.
+</li>
+
+<li>
+Providing automatic thermal protection using a cooling fan.
+</li>
+
+<li>
+Integrating emergency wireless power transfer into the prototype.
+</li>
+
+<li>
+Keeping the system modular, practical and cost-conscious.
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- ================= 07 RESULTS ================= -->
+
+<article class="case-section full">
+
+<h3>
+<span>07</span>
+Results and Evidence
+</h3>
+
+<p>
+The prototype was experimentally validated using reference
+instruments and different operating conditions. The measured sensor
+values showed close agreement with reference readings.
+</p>
+
+
+<div class="metric-grid">
+
+
+<div class="metric">
+
+<strong>
+Voltage Sensing
+</strong>
+
+<span>
+99.68%, 99.59%, 99.41%, 99.30% and 99.37% accuracy across
+the tested battery conditions.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Temperature Sensing
+</strong>
+
+<span>
+99.33% to 99.75% accuracy across the 30°C–50°C reference range.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Solar Output
+</strong>
+
+<span>
+12.5 W recorded during daytime;
+0 W during nighttime testing.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Dynamo Output
+</strong>
+
+<span>
+6.2 W during daytime testing and 6.0 W during nighttime testing.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Cooling Response
+</strong>
+
+<span>
+Temperature reduced from approximately 50°C to 40°C in about
+4 minutes after fan activation.
+</span>
+
+</div>
+
+
+<div class="metric">
+
+<strong>
+Wireless Charging
+</strong>
+
+<span>
+Recipient battery voltage increased by approximately 0.3 V
+during the 15-minute test.
+</span>
+
+</div>
+
+
+</div>
+
+</article>
+
+    
 <!-- ========================================================= -->
 <!-- ============== DIPLOMA PROJECT CASE STUDY ============== -->
 <!-- ========================================================= -->
@@ -1678,624 +2237,11 @@ Practical understanding of alternative power generation.
 
 </article>
 
-
-<!-- ================= 10 ZF RELEVANCE ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>10</span>
-Relevance to Wind Power Engineering
-</h3>
-
-<p>
-This project gave me early practical exposure to wind energy and
-renewable power generation. Working with both solar and wind
-sources helped me understand how renewable sources produce
-electrical power under changing environmental conditions.
-</p>
-
-<p style="margin-top:10px">
-
-The project also provided a foundation in power conversion,
-source integration, power management, electrical load operation
-and renewable energy utilization. These concepts are relevant to
-engineering applications in the wind-power and renewable-energy
-sector.
-</p>
-
-</article>
-
-
-<!-- ================= 11 INTERVIEW ================= -->
-
-<article class="case-section full">
-
-<h3>
-<span>11</span>
-Interview Explanation
-</h3>
-
-<p>
-<b>
-“My diploma project was a Hybrid Solar-Wind Power Management
-System. The objective was to generate electrical power using two
-renewable sources, solar and wind, and use the generated power as
-an alternative and backup source to conventional EB supply. We
-focused on managing the available power from both sources and
-supplying it to the connected load. Through this project, I gained
-practical exposure to renewable power generation, power conversion,
-source integration and load management. Since the project involved
-a wind energy source, it also gave me an initial understanding of
-wind-based electrical power generation.”
-</b>
-</p>
-
-</article>
-
-
 </div>
 
 </div>
 
 </section>
-
-
-<!-- ========================================================= -->
-<!-- ================= PROJECT CASE STUDY ==================== -->
-<!-- ========================================================= -->
-
-<section class="case-study" id="case-study">
-
-<div class="container">
-
-
-<div class="case-hero">
-
-<div class="case-label">
-PROJECT CASE STUDY · 01
-</div>
-
-<h2>
-Smart Two-Wheeler Energy Optimization Using IoT
-</h2>
-
-<p>
-A hardware-based energy management module integrating battery
-monitoring, renewable-energy integration, active thermal management
-and emergency wireless charging for an electric two-wheeler application.
-</p>
-
-<div class="tags">
-
-<span class="tag">STM32 Microcontroller</span>
-<span class="tag">Energy Management</span>
-<span class="tag">Battery Monitoring</span>
-<span class="tag">Solar</span>
-<span class="tag">Dynamo</span>
-<span class="tag">Thermal Management</span>
-<span class="tag">Wireless Charging</span>
-
-</div>
-
-</div>
-
-
-<div class="case-grid">
-
-
-<!-- ================= 01 OVERVIEW ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>01</span>
-Project Overview
-</h3>
-
-<p>
-This project presents a multi-source hardware energy management
-module designed for electric two-wheelers. The system integrates
-battery monitoring, renewable-energy integration, active thermal
-management and emergency wireless charging within a single
-hardware platform.
-</p>
-
-<p style="margin-top:10px">
-
-A 12 V lithium-ion battery is monitored using voltage, current and
-temperature sensing. Solar and dynamo sources are incorporated as
-supplementary charging sources, while the STM32-based control unit
-manages sensing, protection and energy-management functions.
-
-</p>
-
-</article>
-
-
-<!-- ================= 02 GOAL ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>02</span>
-Goal
-</h3>
-
-<ul>
-
-<li>
-Continuously monitor battery voltage, current and temperature.
-</li>
-
-<li>
-Protect the battery from over-voltage, under-voltage and overheating.
-</li>
-
-<li>
-Integrate solar and dynamo sources as supplementary charging sources.
-</li>
-
-<li>
-Select and manage the available charging source.
-</li>
-
-<li>
-Automatically operate the cooling system when temperature rises.
-</li>
-
-<li>
-Provide emergency short-range wireless energy transfer.
-</li>
-
-<li>
-Validate sensing and energy-management functions experimentally.
-</li>
-
-</ul>
-
-</article>
-
-
-<!-- ================= 03 ARCHITECTURE ================= -->
-
-<article class="case-section full">
-
-<h3>
-<span>03</span>
-System Architecture
-</h3>
-
-<p>
-The architecture combines energy sources, battery storage, sensing,
-STM32-based control and protection/output stages.
-</p>
-
-
-<div class="arch">
-
-<div class="node">
-Solar Panel
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Power Control
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-12V Li-ion Battery
-</div>
-
-</div>
-
-
-<div class="arch">
-
-<div class="node">
-Dynamo Generator
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Charging / Source Selection
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Battery
-</div>
-
-</div>
-
-
-<div class="arch">
-
-<div class="node">
-Voltage Sensor
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Current Sensor
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Temperature Sensor
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-STM32 MCU
-</div>
-
-</div>
-
-
-<div class="arch">
-
-<div class="node">
-STM32 Control
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Protection
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Cooling Fan / Source Control
-</div>
-
-</div>
-
-</article>
-
-
-<!-- ================= 04 BUILD ================= -->
-
-<article class="case-section full">
-
-<h3>
-<span>04</span>
-Build Process
-</h3>
-
-
-<div class="process">
-
-
-<div class="step">
-
-<b>
-STEP 01
-</b>
-
-<h4>
-Battery & Sensing
-</h4>
-
-<p>
-A 12 V lithium-ion battery was used as the energy-storage unit.
-Voltage, current and temperature sensing were incorporated for
-continuous monitoring.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<b>
-STEP 02
-</b>
-
-<h4>
-STM32 Control
-</h4>
-
-<p>
-The STM32 microcontroller was used as the central embedded control
-unit for sensor acquisition, processing and control decisions.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<b>
-STEP 03
-</b>
-
-<h4>
-Renewable Integration
-</h4>
-
-<p>
-Solar and dynamo sources were integrated as supplementary charging
-sources with source selection and switching logic.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<b>
-STEP 04
-</b>
-
-<h4>
-Thermal & Emergency Functions
-</h4>
-
-<p>
-A temperature-controlled cooling fan and an emergency short-range
-wireless power-transfer module were integrated and tested.
-</p>
-
-</div>
-
-
-</div>
-
-</article>
-
-
-<!-- ================= 05 FAULT ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>05</span>
-Fault Detection and EFD Logic
-</h3>
-
-<p>
-The system continuously monitors battery voltage, current and
-temperature and compares measured values with predefined safe
-operating limits. The STM32-based control logic uses these
-conditions to initiate the required protection or corrective response.
-</p>
-
-
-<div class="arch">
-
-<div class="node">
-Sensor Measurement
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-STM32 Data Acquisition
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Limit Comparison
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="node">
-Protection / Response
-</div>
-
-</div>
-
-
-<ul style="margin-top:15px;padding-left:20px">
-
-<li>
-<b>Under-voltage:</b>
-non-essential loads are switched out to avoid complete discharge.
-</li>
-
-<li>
-<b>Over-voltage:</b>
-charging is limited when the battery reaches its maximum safe voltage.
-</li>
-
-<li>
-<b>Over-temperature:</b>
-the cooling system is activated when battery temperature rises above
-the defined threshold.
-</li>
-
-</ul>
-
-</article>
-
-
-<!-- ================= 06 CHALLENGES ================= -->
-
-<article class="case-section">
-
-<h3>
-<span>06</span>
-Challenges and Engineering Decisions
-</h3>
-
-<ul>
-
-<li>
-Integrating multiple energy sources into one hardware
-energy-management architecture.
-</li>
-
-<li>
-Reliable acquisition and validation of voltage, current and
-temperature measurements.
-</li>
-
-<li>
-Maintaining battery safety limits during charging and operation.
-</li>
-
-<li>
-Implementing solar/dynamo source selection and switching.
-</li>
-
-<li>
-Providing automatic thermal protection using a cooling fan.
-</li>
-
-<li>
-Integrating emergency wireless power transfer into the prototype.
-</li>
-
-<li>
-Keeping the system modular, practical and cost-conscious.
-</li>
-
-</ul>
-
-</article>
-
-
-<!-- ================= 07 RESULTS ================= -->
-
-<article class="case-section full">
-
-<h3>
-<span>07</span>
-Results and Evidence
-</h3>
-
-<p>
-The prototype was experimentally validated using reference
-instruments and different operating conditions. The measured sensor
-values showed close agreement with reference readings.
-</p>
-
-
-<div class="metric-grid">
-
-
-<div class="metric">
-
-<strong>
-Voltage Sensing
-</strong>
-
-<span>
-99.68%, 99.59%, 99.41%, 99.30% and 99.37% accuracy across
-the tested battery conditions.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Temperature Sensing
-</strong>
-
-<span>
-99.33% to 99.75% accuracy across the 30°C–50°C reference range.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Solar Output
-</strong>
-
-<span>
-12.5 W recorded during daytime;
-0 W during nighttime testing.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Dynamo Output
-</strong>
-
-<span>
-6.2 W during daytime testing and 6.0 W during nighttime testing.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Cooling Response
-</strong>
-
-<span>
-Temperature reduced from approximately 50°C to 40°C in about
-4 minutes after fan activation.
-</span>
-
-</div>
-
-
-<div class="metric">
-
-<strong>
-Wireless Charging
-</strong>
-
-<span>
-Recipient battery voltage increased by approximately 0.3 V
-during the 15-minute test.
-</span>
-
-</div>
-
-
-</div>
-
-</article>
 
 <!-- ================= SKILLS ================= -->
 
